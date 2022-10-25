@@ -70,8 +70,18 @@ nav {
    align-items: center;
    position: fixed;
    width: 1134px;
-   top: 36px;
+   top: 0;
+   padding: 36px 0;
    z-index: 100;
+   transition: all 500ms ease;
+}
+
+nav.scrolled {
+   background: var(--dark-color);
+   box-shadow: 0 20px 14px -8px rgba(0, 0, 0, 0.3);
+   border-radius: 0 0 8px 8px;
+   top: 0;
+   padding: 18px;
 }
 
 nav .logo {
@@ -211,6 +221,7 @@ nav ul li a {
 /* --Start Testimonial Section-- */
 
 .testimonials-section {
+   display: flex;
    margin-top: 100px;
    margin-bottom: 50px;
 }
@@ -536,3 +547,109 @@ footer .copyright {
    margin-top: 36px;
 }
 
+@media (max-width: 1100px) {
+   .btn {
+      padding: 12px 32px;
+   }
+
+   .wrapper {
+      padding: 0 100px;
+   }
+
+   nav {
+      width: 100%;
+      left: 0;
+      right: 0;
+      padding: 36px 100px;
+   }
+
+   nav.scrolled {
+      padding: 16px 100px;
+   }
+
+   header,
+   .hero-section,
+   header .wrapper {
+      max-height: 1000px;
+   }
+
+   .hero-section {
+      flex-direction: column;
+   }
+
+   .hero-section .left {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+   }
+
+   .hero-section .left .btn {
+      align-self: flex-start;
+   }
+
+   .hero-section .left h1 {
+      font-size: 50px;
+      line-height: 125%;
+   }
+
+   .hero-section .right {
+      position: absolute;
+      bottom: 0;
+   }
+
+   .hero-section .right img {
+      height: 580px;
+   }
+
+   .hero-section .achievement-card {
+      position: relative;
+      margin-bottom: 80px;
+   }
+
+   .achievement-card.students-enrolled,
+   .achievement-card.overall-rating {
+      left: unset;
+      top: unset;
+   }
+
+   .hero-section .achievement-card {
+      align-self: flex-start;
+      margin: 40px;
+   }
+
+   h2 {
+      font-size: 40px;
+   }
+
+   .testimonials-section {
+      flex-direction: column;
+      align-items: stretch;
+   }
+
+   .testimonials-section .testimonial-card {
+      width: 100%;
+      margin-bottom: 40px;
+   }
+
+   .testimonials-section .testimonial-card:last-child::before {
+      top: -40px;
+      height: cacl(100% + 80px);
+   }
+
+   .testimonials-section .testimonial-card:last-child {
+      transform: translateX(0px);
+   }
+
+   .testimonials-section .desktop-btn {
+      display: none;
+   }
+
+   .testimonials-section .mobile-btn {
+      display: block;
+      align-self:flex-start;
+   }
+
+   
+
+}
