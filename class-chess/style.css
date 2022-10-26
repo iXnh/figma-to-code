@@ -634,11 +634,13 @@ footer .copyright {
 
    .testimonials-section .testimonial-card:last-child::before {
       top: -40px;
+      left: 60px;
       height: cacl(100% + 80px);
    }
 
    .testimonials-section .testimonial-card:last-child {
       transform: translateX(0px);
+      margin-bottom: 0;
    }
 
    .testimonials-section .desktop-btn {
@@ -647,9 +649,56 @@ footer .copyright {
 
    .testimonials-section .mobile-btn {
       display: block;
-      align-self:flex-start;
+      align-self:flex-end;
+      order: 3;
    }
 
+   .testimonials-section .right {
+      order: 1;
+   }
    
+   .testimonials-section .left {
+      order: 2;
+   }
 
+   .testimonials-section .right p {
+      display: inline;
+   }
+
+   .testimonials-section h2 {
+      margin-bottom: 20px;
+   }
+
+   .classes-section .class-cards {
+      flex-direction: column;
+      gap: 80px;
+   }   
+
+   .classes-section .class-card {
+      margin: 0;
+   }
+
+   .classes-section h2 {
+      margin-bottom: 40px;
+   }
+
+   .classes-section .class-card img {
+      height: 260px;
+      object-fit: cover;
+   }
+
+   .classes-section .class-card h3 {
+      font-size: 24px;
+   }
+
+   .classes-section .wrapper .btn {
+      right: 100px;
+   }
+
+   .classes-section .class-card:last-child {
+      margin-bottom: 50px;
+   }
+
+
+   
 }
