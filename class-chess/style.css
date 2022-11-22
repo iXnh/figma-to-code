@@ -41,19 +41,21 @@ body {
 }
 
 .btn.light {
-   background: var(--orange-color);
+   background: var(--dark-blue-color);
 }
 
 .btn.enrol-icon::before {
    content: url("images/enrol-icon.svg");
    position: absolute;
-   top: 50%;
+   top: 55%;
    left: 32px;
    transform: translateY(-50%);
 }
 
 .btn.enrol-icon {
    padding-left: 60px;
+   margin-top: 25px;
+
 }
 
 /* Header */
@@ -122,7 +124,7 @@ nav ul li a {
    font-family: "Raleway", sans-serif;
    font-weight: 900;
    font-size: 50px;
-   line-height: 125%;
+   line-height: 62.5px;
    color: #ffffff;
    margin-bottom: 0;
 }
@@ -131,12 +133,14 @@ nav ul li a {
    font-family: "Poppins", sans-serif;
    font-weight: normal;
    font-size: 16px;
-   line-height: 200%;
+   line-height: 32px;
    color: #ffffff;
+   padding-top: 14px;
 }
 
 .hero-section .left {
    width: 457px;
+   margin-bottom:250px ;
 }
 
 
@@ -145,8 +149,8 @@ nav ul li a {
 }
 
 .hero-section .right img {
-   padding-left: 85%;
-   height: 420px;
+   padding-left: 45%;
+   height: 600px;
    vertical-align: middle;
 }
 
@@ -155,8 +159,14 @@ nav ul li a {
 
 .achievement-card {
    position: absolute;
+   margin-top: 120px;
    min-width: 200px;
 }
+
+.achievement-card:last-child {
+   margin-top: 100px;
+}
+
 
 .achievement-cards .content {
    border-radius: 24px;
@@ -435,7 +445,6 @@ section p {
 .app-section {
    text-align: center;
    padding-top: 60px;
-   padding-bottom: 60px;
 }
 
 .app-section .app-buttons {
@@ -547,7 +556,7 @@ footer .copyright {
    margin-top: 36px;
 }
 
-nav.mobile-nav {
+nav.mobile-nav, .mobile-menu-container {
    display: none;
 }
 
@@ -598,15 +607,22 @@ nav.mobile-nav {
    .hero-section .right {
       position: absolute;
       bottom: 0;
+      margin-left: 100px;
    }
 
    .hero-section .right img {
       height: 500px;
+      padding-left: 0%;
    }
 
    .hero-section .achievement-card {
       position: relative;
       margin-bottom: 80px;
+      margin-top: -170px;
+   }
+   
+   .hero-section .achievement-card:last-child {
+      margin-top: 5px;
    }
 
    .achievement-card.students-enrolled,
@@ -743,6 +759,14 @@ nav.mobile-nav {
          font-size: 16px;
       }
 
+      .hero-section .achievement-card {
+         margin-top: -270px; 
+      }
+      
+      .hero-section .achievement-card:last-child {
+         margin-top: 5px;
+      }
+
       .mobile-menu-container {
          position: fixed;
          height: 100vh;
@@ -822,10 +846,12 @@ nav.mobile-nav {
 
          .hero-section .right img {
             height: 370px;
+            padding-left: 40%;
          }
 
+         
          .hero-section .right {
-           transform: translateX(-200px);          
+           transform: translateX(-100px);          
          }
 
          .achievement-card h3 {
@@ -834,6 +860,11 @@ nav.mobile-nav {
 
          .hero-section .achievement-card {
             margin-bottom: 48px;
+            margin-top: -200px; 
+         }
+         
+         .hero-section .achievement-card:last-child {
+            margin-top: 5px;
          }
 
          .hero-section .achievement-cards {
@@ -865,6 +896,7 @@ nav.mobile-nav {
          .classes-section .wrapper {
             padding: 0;
          }
+         
 
          .classes-section .class-card img {
             height: 240px;
