@@ -5,6 +5,6 @@ A library of System-Components from Figma to HTML, CSS and JavaScript
 |  1  | class-chess     | [Live Preview](https://chess-class.netlify.app/)
 
 
-Maintained by [Ikhsan](https://nashkispace.me/)
+<!-- Maintained by [Ikhsan](https://nashkispace.me/) --!>
 
 Published with [GitHub Pages](https://pages.github.com/) & [Netlify](https://www.netlify.com/)
